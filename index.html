@@ -6,6 +6,8 @@
  </head>
  <body>
   <table border="1">
+   <span>
+     <form>
    <tr>
     <th>Ім'я</th>
     <th>Прізвище</th>
@@ -37,25 +39,36 @@
     <th>pos98@yahoo.com</th>
    </tr>
  </table>
- <br><br>
+</span>
+ 
+<span>
  <h2>Ваші дані:</h2>
-
- <form action="/action_page.php"><br>
-   <input type="text" id="fname" name="fname" placeholder="Ім'я"><br><br>
-   <input type="text" id="lname" name="lname" placeholder="Прізвище"><br><br>
+ <form action="/action_page.php">
+</span>
+   <input type="text" id="fname" name="fname" placeholder="Ім'я">
+   <p>
+     <input type="text" id="lname" name="lname" placeholder="Прізвище">
+     </p>
+   
  </form> 
  <h2>Стать</h2>
-
-<form action="/action_page.php">
-  <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Чоловіча </label><br>
+   <form action="/action_page.php">
+    <p>
+      <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Чоловіча </label>
+    </p>
+  
+  <p>
   <input type="radio" id="female" name="gender" value="female">
-  <label for="female">Жіноча</label><br>
+  <label for="female">Жіноча</label>
+  </p>
+  
+<span>
   <input type="radio" checked="checked" id="other" name="gender" value="other">
-  <label for="other">Свій варіант</label><br><br>
-     <br/>
+  <label for="other">Свій варіант</label>
+</span>
+<p>
         <form><textarea rows = "6" cols = "30" placeholder = "Коментарій..."></textarea></form>
-        <br/>
     <h2>Ваше місто</h2>
     <select>
       <option selected disabled>оберіть місто</option>
@@ -65,16 +78,22 @@
       <option>Одеса</option>
     </select>
    </form>
+  </p>
   <h2>Мови, якими володієте</h2>
 </form> 
    <form action="/action_page.php">
     <input type="checkbox" id="language1" name="language1" value="russsian">
-    <label for="language1"> русский</label><br>
+    <label for="language1"> русский</label>
+    <p>
     <input type="checkbox" id="language2" name="language2" value="ukrainian">
-    <label for="language2"> українська</label><br>
-    <input type="checkbox" id="vlanguage3" name="language3" value="english">
-    <label for="language3"> english</label><br><br>
+    <label for="language2"> українська</label>
+    </p>
+    <p>
+    <input type="checkbox" id="language3" name="language3" value="english">
+    <label for="language3"> english</label>
+    </p>
     <form>
+  
       <input type="button" value="send" onclick="msg()">
     </form>
     
