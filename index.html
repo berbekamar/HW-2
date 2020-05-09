@@ -1,76 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
  <head>
   <meta charset="utf-8">
   <title>Information</title>
- </head>
- <body>
-  <table border="1">
-   <span>
-     <form>
-   <tr>
-    <th>Ім'я</th>
-    <th>Прізвище</th>
-    <th>Телефон</th>
-    <th>E-mail</th>
-   </tr>
-   <tr>
-    <th>Віталій</th>
-    <th>Бербека</th>
-    <th>0632413767</th>
-    <th>berbeka4@gmail.com</th>
-  </tr>
-  <tr>
-    <th>Володимир</th>
-    <th>Тютюнник</th>
-    <th>06789123345</th>
-    <th>bosterk@gmail.com</th>
-   </tr>
-   <tr>
-    <th>Оксана</th>
-    <th>Слюсарнеко</th>
-    <th>0634589767</th>
-    <th>vintagefor@gmail.com</th>
-  </tr>
-  <tr>
-    <th>Анатолій</th>
-    <th>Ліщинський</th>
-    <th>0995445555</th>
-    <th>pos98@yahoo.com</th>
-   </tr>
- </table>
-</span>
- 
-<span>
- <h2>Ваші дані:</h2>
- <form action="/action_page.php">
-</span>
-   <input type="text" id="fname" name="fname" placeholder="Ім'я">
-   <p>
-     <input type="text" id="lname" name="lname" placeholder="Прізвище">
-     </p>
-   
- </form> 
+  <style>
+    table ,th {
+      border: 4px inset rgb(109, 91, 91);
+      border-collapse: collapse;
+    }
+    input, select {
+      margin: 2px;
+    }
+  </style>
+
+</head>
+    <body>
+      <table class="table1">
+        <thead>
+          <tr>
+           <th>Ім'я</th>
+           <th>Прізвище</th>
+           <th>Телефон</th>
+           <th>E-mail</th>
+          </tr>
+          </thead>
+          <tr>
+           <th>Віталій</th>
+           <th>Бербека</th>
+           <th>0632413767</th>
+           <th>berbeka4@gmail.com</th>
+          </tr>
+          <tr>
+           <th>Володимир</th>
+           <th>Тютюнник</th>
+           <th>06789123345</th>
+           <th>bosterk@gmail.com</th>
+          </tr>
+          <tr>
+           <th>Оксана</th>
+           <th>Слюсарнеко</th>
+           <th>0634589767</th>
+           <th>vintagefor@gmail.com</th>
+         </tr>
+         <tr>
+           <th>Анатолій</th>
+           <th>Ліщинський</th>
+           <th>0995445555</th>
+           <th>pos98@yahoo.com</th>
+         </tr>
+   </table>
+
+   <h2>Ваші дані:</h2>
+<form action="/action_page.php">
+  <input type="text" id="fname" name="fname" placeholder="Ім'я">
+  <p>
+
+    <input type="text" id="lname" name="lname" placeholder="Прізвище">
+    </p>
+</form>
  <h2>Стать</h2>
    <form action="/action_page.php">
-    <p>
       <input type="radio" id="male" name="gender" value="male">
-  <label for="male">Чоловіча </label>
-    </p>
+       <label for="male">Чоловіча </label>
   
   <p>
   <input type="radio" id="female" name="gender" value="female">
   <label for="female">Жіноча</label>
   </p>
   
-<span>
+<p>
   <input type="radio" checked="checked" id="other" name="gender" value="other">
   <label for="other">Свій варіант</label>
-</span>
+</p>
 <p>
-        <form><textarea rows = "6" cols = "30" placeholder = "Коментарій..."></textarea></form>
+  <textarea rows = "6" cols = "30" placeholder = "Коментарій..."></textarea>
+  </p>
+   </form>
     <h2>Ваше місто</h2>
-    <select>
+   
+   <form>
+      <select>
       <option selected disabled>оберіть місто</option>
       <option>Київ</option>
       <option>Львів</option>
@@ -78,9 +87,9 @@
       <option>Одеса</option>
     </select>
    </form>
-  </p>
+
   <h2>Мови, якими володієте</h2>
-</form> 
+
    <form action="/action_page.php">
     <input type="checkbox" id="language1" name="language1" value="russsian">
     <label for="language1"> русский</label>
@@ -92,10 +101,8 @@
     <input type="checkbox" id="language3" name="language3" value="english">
     <label for="language3"> english</label>
     </p>
-    <form>
-  
-      <input type="button" value="send" onclick="msg()">
-    </form>
+  </form>
+       <input type="button" value="send" onclick="msg()">
     
     <script>
     function msg() {
@@ -105,6 +112,3 @@
     
     </body>
     </html>
-  </form>
- </body>
-</html>
